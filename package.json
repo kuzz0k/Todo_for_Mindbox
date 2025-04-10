@@ -1,11 +1,15 @@
 {
   "name": "todo",
+  "homepage": "https://kuzz0k.github.io/Todo_for_Mindbox/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "test": "jest",
-    "start": "vite"
+    "start": "vite",
+    "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "react": "^19.0.0",
