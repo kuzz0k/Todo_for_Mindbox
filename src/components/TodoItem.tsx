@@ -1,14 +1,14 @@
-import React from 'react';
-import { ITodo } from '../types/ITodo';
+import React from "react"
+import { ITodo } from "../types/ITodo"
 
 interface TodoItemProps {
-  todo: ITodo;
-  onToggle: (id: number) => void;
+  todo: ITodo
+  onToggle: (id: number) => void
 }
 
 const TodoItem: React.FC<TodoItemProps> = ({ todo, onToggle }) => {
   return (
-    <li className={`todo-item ${todo.completed ? 'completed' : ''}`}>
+    <li className={`todo-item ${todo.completed ? "completed" : ""}`}>
       <label>
         <input
           type="checkbox"
@@ -19,7 +19,7 @@ const TodoItem: React.FC<TodoItemProps> = ({ todo, onToggle }) => {
         <span className="todo-text">{todo.text}</span>
       </label>
     </li>
-  );
-};
+  )
+}
 
-export default TodoItem;
+export default TodoItem
